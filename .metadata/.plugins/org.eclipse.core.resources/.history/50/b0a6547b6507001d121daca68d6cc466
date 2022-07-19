@@ -1,0 +1,30 @@
+package singletonClass;
+
+class Student{
+	
+	private static Student student;  // Intance Variable
+	
+	private Student() {  //Constructor
+		
+	}
+	
+	public static Student getStudent() {
+		if(student==null) {
+			student= new Student();
+		}
+		return student;
+	}
+}
+
+
+
+public class Test {
+	
+	
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

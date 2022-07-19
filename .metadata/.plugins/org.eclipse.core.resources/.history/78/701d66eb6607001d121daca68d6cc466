@@ -1,0 +1,22 @@
+package com.collectionDoubt;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class CollectionDoubt {
+
+	public static void main(String[] args) {
+		Set<String> s=new HashSet<String>();
+		s.add("Pritam");
+		s.add("pritam");
+		System.out.println(s);
+	}
+	public static void add(Set s,String str) {
+		boolean b=true;
+		for(Object s1:s) {
+			if(s1.equalsIgnoreCase(str)) {
+				b=false;
+			}
+		}
+	}
+}
